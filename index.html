@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Space For You ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter:wght@400;500;700&family=Pacifico&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="splash" class="page active">
+  <div class="logo">❤️</div>
+  <h1 class="script">Made With Love & Respect</h1>
+  <div class="friend-name">A Little Space For You MAHA</div>
+  <button onclick="showPage('home')">Enter Memories ✨</button>
+</section>
+
+<section id="home" class="page">
+  <div class="hero-card">
+    <h1>Hey You ❤️</h1>
+    <p class="subtitle">
+      Some people may not stay the same way in our life,  
+      but their memories always stay special.
+    </p>
+    <p>
+      This little app is made only to make you smile and remind you that you were truly special to me.
+    </p>
+    <button onclick="showPage('memories')">Our Memories 🌙</button>
+    <button onclick="showPage('surprise')">Open Gift 🎁</button>
+    <button onclick="toggleDarkMode()">Dark / Light 🌗</button>
+  </div>
+</section>
+
+<section id="about" class="page">
+  <h2>Why You Are Still Special ✨</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Your Smile 😊</h3>
+      <p>Your smile was one of my favorite things.</p>
+    </div>
+
+    <div class="card">
+      <h3>Your Care 💖</h3>
+      <p>The way you cared will always stay in my heart.</p>
+    </div>
+
+    <div class="card">
+      <h3>Your Talks 🥺</h3>
+      <p>I still remember those small talks that meant a lot.</p>
+    </div>
+
+    <div class="card">
+      <h3>Your Presence 🌸</h3>
+      <p>Your presence once made my world feel peaceful.</p>
+    </div>
+
+    <div class="card">
+      <h3>Your Memories 🌙</h3>
+      <p>Some memories cannot be deleted from the heart.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="page">
+  <h2>Memory Gallery 💕</h2>
+  <p class="subtitle">Photos • Smiles • Screenshots • Moments</p>
+
+  <div class="gallery">
+    <div class="photo-card"><a href="https://photos.app.goo.gl/ZnCM5jvoYT6G4PmK7">Open Link</a>
+
+  </div>
+</section>
+
+<section id="music" class="page">
+  <h2>Songs That Remind Me Of You 🎵</h2>
+
+  <div class="hero-card">
+    <p class="subtitle">Some songs don’t just play. They bring back memories.</p>
+
+    <audio controls loop>
+      <source src="voice/WhatsApp Audio 2026-05-28 at 10.04.11 AM (1).ogg" type="audio/mpeg">
+    </audio>
+    <audio controls loop>
+      <source src="voice/WhatsApp Audio 2026-05-28 at 10.04.11 AM (2).ogg" type="audio/mpeg">
+    </audio>
+    <audio controls loop>
+      <source src="voice/WhatsApp Audio 2026-05-28 at 10.04.11 AM (3).ogg" type="audio/mpeg">
+    </audio>
+    <audio controls loop>
+      <source src="voice/WhatsApp Audio 2026-05-28 at 10.04.11 AM (4).ogg" type="audio/mpeg">
+    </audio>
+    <audio controls loop>
+      <source src="voice/WhatsApp Audio 2026-05-28 at 10.04.11 AM.ogg" type="audio/mpeg">
+    </audio>
+    <audio controls loop>
+      <source src="voice/WhatsApp Audio 2026-05-28 at 10.04.12 AM (1).ogg" type="audio/mpeg">
+    </audio>
+    <audio controls loop>
+      <source src="voice/WhatsApp Audio 2026-05-28 at 10.04.12 AM (2).ogg" type="audio/mpeg">
+    </audio>
+    <audio controls loop>
+      <source src="voice/WhatsApp Audio 2026-05-28 at 10.04.12 AM.ogg" type="audio/mpeg">
+    </audio>
+    <audio controls loop>
+      <source src="voice/WhatsApp Audio 2026-05-28 at 10.04.13 AM (1).ogg" type="audio/mpeg">
+    </audio>
+    <audio controls loop>
+      <source src="voice/WhatsApp Audio 2026-05-28 at 10.04.13 AM.ogg" type="audio/mpeg">
+    </audio>
+
+    <br><br>
+
+    <button onclick="playVoice()">Hear My Message 🎤</button>
+    <button onclick="window.open('https://youtu.be/2pOVz45p8Ho?si=PVbBr_3JEgW7NnaT', '_blank')">Open Song ▶</button>
+  </div>
+</section>
+
+<section id="secret" class="page">
+  <h2>Open When You Feel Low 💌</h2>
+
+  <div class="secret-box">
+    <div class="lock" id="lockIcon">🔒</div>
+    <button onclick="unlockMessage()">Unlock Message</button>
+
+    <p id="hiddenMessage" class="hidden-message">
+      I don’t know what life has planned for us,  
+      but I truly wish you happiness, peace, and success.  
+      You were special to me, and a part of you will always remain in my memories. ❤️
+    </p>
+  </div>
+</section>
+
+<section id="surprise" class="page">
+  <h2>Special Gift 🎁</h2>
+
+  <div class="hero-card">
+    <div class="gift-box" onclick="openGift()" id="giftBox">🎁</div>
+    <p>Tap the gift box</p>
+
+    <div id="surpriseMsg" class="hidden-message">
+      <h2 class="script">Till now i ......................... ❤️</h2>
+      <p>
+        இப்போ நாம நல்ல friends-ah இருக்கலாம் 😊
+உனக்கு எப்போதும் நான் இருப்பேன்.
+எதுக்காகவும் நீ feel பண்ணாத…
+நீ சந்தோஷமா இருக்கணும் என்பதுதான் எனக்கு முக்கியம் ❤️
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="letter" class="page">
+  <div class="letter-box">
+    <h2>A Small Letter For You ✍️</h2>
+    <p>
+      I just wanted to say thank you.  
+      Thank you for the memories, the care, the smiles, and the beautiful moments.
+    </p>
+    <br>
+    <p>
+      Even if life changed our path, I will always respect what we had.
+      I wish you only happiness and peace.
+    </p>
+    <br>
+    <p>
+நீ இப்போது என் வாழ்க்கையில் இல்லையென்றாலும்,
+நினைவுகளில் மட்டும் இன்னும் இருக்கிறாய். ❤️
+    </p>
+  </div>
+  <p>
+சில மனிதர்களை மறக்க முடியாது…
+ஏனெனில் அவர்கள் நம்முடைய வாழ்க்கையை
+ஒரு காலத்தில் மிகவும் அழகாக மாற்றியவர்கள்.
+    </p>
+  </div>
+  <p>
+நம்முடைய பேச்சுகள், சிரிப்புகள், சிறிய சண்டைகள் —
+அனைத்தும் இன்னும் நினைவில் இருக்கிறது.
+    </p>
+  </div>
+  <p>
+நான் உன்னை தொந்தரவு செய்ய விரும்பவில்லை…
+ஆனால் உண்மையாக சொல்ல வேண்டும் என்றால்,
+சில நேரங்களில் நான் இன்னும் உன்னை மிஸ் செய்கிறேன். 🌙
+    </p>
+  </div>
+</section>
+
+<section id="ending" class="page">
+  <div class="letter-box">
+    <h2>Always Wishing You Happiness 💫</h2>
+    <p class="subtitle">Some stories may change, but the care remains.</p>
+    <p>Thank you for being a beautiful part of my life.</p>
+    <br>
+    <p><b>Made with love and respect by CHANDRAN M ❤️</b></p>
+    <p><b>MISS YOU MADAM JIIIIII ❤️</b></p>
+  </div>
+</section>
+
+<div id="bottomNav" class="bottom-nav">
+  <button onclick="showPage('home')">Home</button>
+  <button onclick="showPage('about')">Special</button>
+  <button onclick="showPage('memories')">Memory</button>
+  <button onclick="showPage('gallery')">Photos</button>
+  <button onclick="showPage('music')">Music</button>
+  <button onclick="showPage('secret')">Secret</button>
+  <button onclick="showPage('letter')">Letter</button>
+  <button onclick="showPage('ending')">End</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
